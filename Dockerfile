@@ -8,6 +8,6 @@ RUN mvn clean package  -Dskiptests
 
 FROM openjdk:8-jre-slim-stretch
 
-COPY --from=build /target/bibafrica-0.0.1-SNAPSHOT.jar bibafrica.jar
+COPY --from=build /target/realestateplatform-0.0.1-SNAPSHOT.jar realestateplatform.jar
 
-ENTRYPOINT [ "java","-jar","bibafrica.jar"]
+ENTRYPOINT [ "java","-jar","realestateplatform.jar"]
